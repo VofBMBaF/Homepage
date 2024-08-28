@@ -1,24 +1,43 @@
 *
 {
-    background-color: rgb(38, 14, 24) !important;
+    background-color: #a0aecd !important;
 
 
 }
+
+html
+{
+    position: relative;
+    min-width: 1024px;
+    min-height: 768px;
+    height: 100%;
+    max-width: 1024px;
+    max-height: 768px;
+
+}
+
+footer
+{
+    font-family: "Unica One" !important;
+}
+
 
 .navbar a 
 {
     text-decoration: none;
-    font-size: large;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #ffd6bd;
-    padding-left: 5em;
-    padding-right: 5em;
+    font-size: 25px;
+    font-family: "Unica One";
+    font-weight: 600;
+    color: black;
+    padding-left: 3em;
+    padding-right: 3em;
     background-color: transparent !important;
+    
 }
 
 .navbar 
 {
-    background-color: rgb(50, 19, 32) !important;
+    
     padding: 13px;
     margin-bottom: 10%;
 
@@ -26,22 +45,18 @@
 
 .navbar * 
 {
-    background-color: rgb(50, 19, 32) !important;
+
     justify-content: space-between;
 }
 
-.container-fluid *
-{
-    background-color: rgb(50, 19, 32) !important;  
-}
 
 
 
 .about-me 
 {
-    color: wheat;
+    color: rgb(0, 0, 0);
     padding: 5rem;
-    outline: wheat solid 1px;
+    outline: rgb(0, 0, 0) solid 1px;
     outline-offset: -1rem;
     margin-left: 20%;
     margin-right: 20%;
@@ -58,8 +73,9 @@
 {
     position: absolute;
     top: 5px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "DM Sans";
     font-weight: lighter;
+    font-weight: 540;
     
 }
 
@@ -67,6 +83,7 @@
 {
     max-width: 100%;
     max-height: auto;
+    
 }
 
 .image
@@ -78,13 +95,14 @@
 {
     font-size: 15px;
     padding-right: 20px;
+    font-family: "DM Sans";
 }
 
 .info
 {
     margin-top: 10%;
     margin-bottom: 30px;
-    background-color: #1e0b13 !important;
+    background-color: #7d8bab !important;
     margin-left: 5%;
     margin-right: 5%;
     padding: 5px;
@@ -93,7 +111,8 @@
 
 .info p
 {
-    background-color: #1e0b13 !important;
+    background-color: #7d8bab !important;
+    font-family: "DM Sans";
     font-size: 10px;
     color: white;
 }
@@ -114,7 +133,7 @@
 
 .dropdown-content a 
 {
-  color: rgb(211, 192, 192);
+  color: rgb(0, 0, 0);
   padding: 12px 16px;
   text-decoration: none;
   font-size: 15px;
@@ -133,7 +152,7 @@
 {
     text-align: center;
     color: #fff0e6;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: "DM Sans";
 
 
 }
@@ -141,7 +160,7 @@
 .floater
 {
 
-    background-color: #50293a !important;
+   
     border: #1a0910 solid 0.1px;
     margin-right: 5%;
     margin-left: 5%;
@@ -149,15 +168,10 @@
     padding: 25%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
     position: relative;
+    font-family: "DM Sans" !important;
 
 }
 
-.floater *
-
-{
-    background-color: #50293a !important;
-    
-}
 
 .left
 {
@@ -166,8 +180,8 @@
     margin-left: -10px;
     top: 3em;
     left: 2em;
-    color: #ff8b44;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-family: "DM Sans";
    
 
 
@@ -176,29 +190,201 @@
 .left h6
 {
     font-size: 10px;
-    color: beige;
+    color: rgb(0, 0, 0);
     padding-bottom: 1em;
-    box-shadow: 0 1px 0 beige;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 1px 0 rgb(0, 0, 0);
+    font-family: "DM Sans";
 }
 
 #info
 {
     font-size: 12px;
-    color: bisque;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    font-family: "DM Sans";
 }
 
 .top
 {
     font-size: 8px;
+    font-family: "DM Sans" !important;
+    margin-bottom: -5px;
 }
 
 .floater p
 {
     position: absolute;
-    bottom: 0.1em;
-    right: 1em;
-    font-size: small;
-    color: rgb(85, 85, 85);
+    bottom: -1em;
+    left: 2em;
+    font-size: 10px;
+    color: rgb(0, 0, 0);
+    font-family: "DM Sans" !important;
+}
+
+.floater h1
+{
+    font-weight: 280;
+}
+
+.fs-6
+{
+    font-family: "DM Sans" !important;
+}
+
+ul li 
+{
+    font-family: "DM Sans" !important;
+}
+
+.me-3
+{
+    font-family: "DM Sans" !important;
+}
+
+.upcoming *
+{
+    color: #333333 !important;
+}
+
+/* Blog Page Styles */
+
+.title-container
+{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: -10px;
+    margin-bottom: 6em;
+}
+
+.blog-container
+{
+    width: 25%;
+    margin-right: -10em;
+    
+    
+}
+
+.blog-container h1
+{
+    font-size: 40px;
+    color: rgb(5, 5, 50);
+    
+}
+
+.info-container
+{
+    width: 5%;
+    
+    
+}
+
+.info-container h1
+{
+    font-size: 10px;
+    padding-left: 5px;
+    box-shadow: -1px 0 0 0 rgb(0, 0, 0);
+    margin-top: 10px;
+    
+}
+
+.post-container
+{
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5em;
+    padding: 5px;
+    background-color: #7d8bab !important;
+    
+
+}
+
+.post-container * 
+{
+    background-color: #7d8bab !important;
+    
+}
+
+.post-container img
+{
+   max-width: 100%;
+   max-height:100%;
+   padding-right: 10px;
+   
+    
+}
+
+.linux-image
+{
+    width: 15em;
+    float: left;
+}
+
+.post-text-container h1
+{
+    font-size: 20px;
+    font-family: "DM Sans";
+    color: rgb(5, 5, 50);
+    font-weight: bold;
+    background-color: #7d8bab !important;
+    
+
+}
+
+.post-text-container p
+{
+    font-size: 10px;
+    font-family: "DM Sans";
+    color: rgb(255, 255, 255);
+}
+
+.post-text-container h6
+{
+    font-size: 10px;
+    font-family: "DM Sans";
+    color: rgb(43, 43, 44);
+}
+
+.holds-everything
+{
+    background-color: #7d8bab !important;
+    padding: 5px;
+    
+}
+
+.contact-page-container
+{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    padding: 5rem;
+    outline: rgb(0, 0, 0) solid 1px;
+    outline-offset: -1rem;
+    margin-left: 20%;
+    margin-right: 20%;
+    position: relative;
+    display: flex;
+    
+
+}
+
+.contact-page-container h1
+{
+    position: absolute;
+    top: -5px;
+    font-family: "DM Sans";
+    font-weight: lighter;
+    font-weight: 540;
+}
+
+
+.contact-text
+{
+    font-family: "DM Sans";
+    font-weight: 100;
+    color: #343e55;
+    text-align: left;
 }
