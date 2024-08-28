@@ -9,17 +9,34 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="container-fluid"></div>
-            <a href="about">About Me</a>
-            <a href="projects">Projects</a>
-            <a href="blog">Blog</a>
-            <a href="contact">Contact</a>
-        </div>
+        <div class="container-fluid">
+            <span class="dropdown">
+              <a href="#" onclick="myFunction(this)" class="dropbtn">About Me</a>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="#">Hobbies</a>
+                <a href="#">Topics</a>
+                <a href="#">Education</a>
+              
+              </span>
+            </div>
+            <a href="projects.html">Projects</a>
+              <span class="dropdown">
+                <a href="#" onclick="myFunction(this)" class="dropbtn">Blog</a>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Linux</a>
+                  <a href="#">Networks</a>
+                  <a href="#">Troubleshooting</a>
+                  <a href="#">Android</a>
+                </div>
+                <a href="contact">Contact</a>
+              </span>
+      </div> 
     </nav>
     <div class="about-me">
         <h6>About Me</h6>
         <div class="text">
-            <p>Hello, I'm Name LastName, currently practicing web development and Python programming with background in Mobile Development for Android Systems.</p>
+            <p>Hello, I'm Name Lastname, currently practicing web development and Python programming with background in Mobile Development for Android Systems.</p>
         </div>
         <div class="image"><img src="avatar.jpg" alt="">
         </div>
@@ -161,7 +178,33 @@
       <!-- Copyright -->
     </footer>
      
-        
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing
+drop down content */
+
+var myFunction = function(target) {
+   target.parentNode.querySelector('.dropdown-content').classList.toggle("show");
+}
+
+// Close dropdown if user clicks outside it
+window.onclick = function(event) 
+{
+  if (!event.target.matches('.dropbtn')) 
+  {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++)  
+    {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) 
+      {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>       
     
 </body>
 </html>
